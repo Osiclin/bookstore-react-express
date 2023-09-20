@@ -7,7 +7,7 @@ function App() {
 
   const getBooks = async () => {
     try {
-      const res = await fetch(`${process.env.BASE_URL}/books?tableName=${tableName}`)
+      const res = await fetch(`/api/v1/books?tableName=${tableName}`)
       const data = await res.json()
       if (res.status === 200) setTableData(data?.data)
     } catch (error) {
