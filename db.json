@@ -1,0 +1,39 @@
+{
+  "staffs": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane@example.com"
+    },
+    {
+      "id": 3,
+      "username": "alice_johnson",
+      "email": "alice@example.com"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "name": "Book 1",
+      "price": 10.99,
+      "description": "A description of Book 1."
+    },
+    {
+      "id": "2",
+      "name": "Book 2",
+      "price": 19.99,
+      "description": "A description of Book 2."
+    },
+    {
+      "id": "3",
+      "name": "Book 3",
+      "price": 7.99,
+      "description": "A description of Book 3."
+    }
+  ]
+}
