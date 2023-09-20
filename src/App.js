@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BASE_URL } from "./constant";
 
 function App() {
   const [tableName, setTableName] = useState('staffs')
@@ -8,7 +7,7 @@ function App() {
 
   const getBooks = async () => {
     try {
-      const res = await fetch(`${BASE_URL}/books?tableName=${tableName}`)
+      const res = await fetch(`${process.env.BASE_URL}/books?tableName=${tableName}`)
       const data = await res.json()
       if (res.status === 200) setTableData(data?.data)
     } catch (error) {
